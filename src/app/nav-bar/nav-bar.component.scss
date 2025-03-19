@@ -1,0 +1,57 @@
+.nav-bar-main {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #141D2F;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    >img {
+        padding-left: 100px;
+        height: 88px;
+        cursor: pointer;
+    }
+}
+
+.nav-bar-links {
+    display: flex;
+    padding-right: 100px;
+    gap: 92px;
+}
+
+.links {
+    display: flex;
+    gap: 29px;
+}
+
+.nav-bar-buttons {
+    display: flex;
+    gap: 14px;
+    height: 32px;
+    width: 92px;
+    >button {
+        border-radius: 10px;
+        font-family: 'Poppins';
+        font-size: 18px;
+        color: white;
+        background-color: unset;
+    }
+    
+    
+}
+
+.clicked{
+    background-color: #70E61C !important;
+    border: unset;
+    cursor: unset;
+}
+
+.notClicked {
+    border: 1px solid #70E61C ;
+    &:hover{
+        background-color: #9747FF !important;
+        border: unset;
+    }
+    
+}
