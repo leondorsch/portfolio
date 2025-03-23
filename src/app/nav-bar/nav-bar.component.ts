@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   
 })
 export class NavBarComponent {
-  statusDE:boolean = true;
-  statusENG:boolean = false;
+  statusDE:boolean = false;
+  statusENG:boolean = true;
   
 
 }

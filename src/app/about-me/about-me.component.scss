@@ -1,9 +1,85 @@
 .about-me-main {
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    position: relative;
 }
 
 .about-me-headline {
     font-size: 90px;
     color: white;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 35px;
+    width: 471px !important;
+    height: 133;
+}
+
+.about-me-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-me-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    >img {
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        display: flex;
+        gap: 10px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    >span {
+        font-size: 16px;
+    }
+}
+
+.personal-img-container {
+    position: relative;
+
+    :nth-child(1) {
+        position: absolute;
+        transform: rotate(-22deg);
+        top: 140px;
+        z-index: -1;
+    }
+
+    :nth-child(2) {
+        position: absolute;
+        left: 200px;
+        top: 92px;
+        z-index: -1;
+    }
+}
+
+.profile-img {
+    width: 100%;
+    max-height: 647px;
+    padding-top: 60px;
+    display: flex;
+}
+
+.curved-section-container {
+    position: absolute;
+    z-index: -1;
+    margin-top: -288px;
+    height: 878.5px;
+    width: 100%;
+    background-image: url('/assets/img/28. Hero Background.png');
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
 }

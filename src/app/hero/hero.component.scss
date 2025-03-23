@@ -89,6 +89,7 @@
 
 .socials-container {
     display: flex;
+    z-index: 1000;
     align-items: center;
     gap: 42px;
 }

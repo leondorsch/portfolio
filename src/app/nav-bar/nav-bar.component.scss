@@ -1,12 +1,22 @@
 .nav-bar-main {
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    
     background-color: #141D2F;
     height: 10vh;
+    font-size: 23px;
+    
+}
+
+.nav-bar-content {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 23px;
+    height: 100%;
     >img {
         padding-left: 100px;
         height: 88px;
