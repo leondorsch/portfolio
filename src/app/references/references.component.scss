@@ -68,7 +68,9 @@
     height: 0;
     position: absolute;
     right: 0;
-    min-width: 424px;
+    min-width: 564px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .reference-wrapper {
@@ -76,4 +78,33 @@
     align-items: center;
     gap: 44px;
     justify-content: space-between;
+}
+
+.forward-and-back-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    >img {
+        padding: 4px;
+        &:hover {
+            border-radius: 50px;
+            border: 2px solid #9747FF;
+            cursor: pointer;
+        }
+    }
+}
+
+.ellipse-active{
+    height: 8px;
+    width: 8px;
+    background: #70E61C;
+    border-radius: 50px;
+}
+
+.ellipse-unactive {
+    height: 8px;
+    width: 8px;
+    background: #9747FF;
+    border-radius: 50px;
 }

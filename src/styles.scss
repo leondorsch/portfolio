@@ -7,6 +7,7 @@ body {
     background-color: #141D2F;
     color: white;
     overflow-x: hidden;
+    min-height: 100%;
 }
 
 a {
@@ -23,6 +24,22 @@ button {
     &:hover {
         cursor: pointer;
     }
+}
+
+input{
+    color: white;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    background: #141D2F;
+    padding-left: 15px;
+    &:hover {
+        border: 1px solid #1CDAE6;
+        cursor: pointer;
+    }
+}
+
+input::placeholder{
+    color: white;
 }
 
 /* poppins-regular - latin */

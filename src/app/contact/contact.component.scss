@@ -1,0 +1,145 @@
+.contact-main {
+    padding: 160px 100px 0px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h6 {
+    text-align: center;
+    font-size: 90px;
+    padding-bottom: 24px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+   
+}
+
+.contact-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 573px;
+
+    :nth-child(1) {
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        letter-spacing: 0%;
+    }
+
+    :nth-child(2) {
+        max-width: 473px;
+    }
+
+    :nth-child(3) {
+        >span {
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+
+    >button {
+        background: #B6B6B6;
+        width: 253px;
+        height: 58px;
+        gap: 10px;
+        border-radius: 10px;
+        border: none;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: white;
+    }
+}
+
+.name-input {
+    width: 617px;
+    height: 50px;
+    gap: 10px;
+
+}
+
+.email-input {
+    width: 617px;
+    height: 50px;
+    gap: 10px;
+}
+
+.message-input {
+    width: 617px;
+    gap: 10px;
+    padding-bottom: 165px;
+    padding-top: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 0;
+    border: 1px solid #70E61C;
+    border-radius: 2px;
+
+    &:hover {
+        background-color: #797EF3;
+    }
+}
+
+.contact-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-line {
+    height: 0;
+    border: 2px solid #70E61C;
+    position: absolute;
+    right: 0;
+    width: 920px;
+    margin-bottom: 24px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.form-section-wrapper {
+    >img {
+        position: absolute;
+        width: 820px;
+        top: 4600px;
+        right: 0;
+        backdrop-filter: blur(93px);
+        display: flex;
+        z-index: -1;
+    }
+}
+
+.go-up-btn-container {
+    padding: 48px 16px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
