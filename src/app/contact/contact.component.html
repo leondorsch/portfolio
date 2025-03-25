@@ -2,30 +2,28 @@
 
     <div class="contact-head">
         <div class="contact-line"></div>
-        <h6>Contact</h6>
+        <h6>{{ 'contactHead' | translate }}</h6>
     </div>
 
     <div class="contact-wrapper">
 
         <div class="contact-text-container">
-            <span>Got a problem to solve?</span>
+            <span>{{ 'contactQuestion' | translate }}</span>
             <span>
-                Encourage people to contact you and describe what role you are interested in. Show that you will add
-                value to their projects through your work.
+                {{ 'contactInfo' | translate }}
             </span>
-            <span>Need a Frontend developer? <span>Contact me!</span></span>
+            <span>{{ 'needFrontend' | translate }} <span>{{ 'contactMe' | translate }}</span></span>
         </div>
         <div class="form-section-wrapper">
             <form class="contact-form" action="">
-                <input class="name-input" type="text" placeholder="Your name">
-                <input class="email-input" type="email" placeholder="Your email">
-                <input class="message-input" type="text" placeholder="Your message">
+                <input class="name-input" type="text" placeholder="{{ 'placeholderName' | translate }}">
+                <input class="email-input" type="email" placeholder="{{ 'placeholderEmail' | translate }}">
+                <input class="message-input" type="text" placeholder="{{ 'placeholderMessage' | translate }}">
                 <div class="checkbox-container">
                     <input type="checkbox">
-                    <span>I've read the<a style="color: #9747FF;" href=""> privacy policy </a>and agree to the processing of
-                        my data as outlined.</span>
+                    <span>{{ 'iveRead' | translate }}<a style="color: #9747FF;" href=""> {{ 'Policy' | translate }} </a>{{ 'processDataText' | translate }}</span>
                 </div>
-                <button disabled>Send message</button>
+                <button disabled>{{ 'sendMessage' | translate }}</button>
             </form>
             <div class="go-up-btn-container">
                 <img src="assets/img/4. Go up button.png" alt="">

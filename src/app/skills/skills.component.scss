@@ -4,7 +4,9 @@
     justify-content: center;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 100px;
+    z-index: 2;
+    position: relative;
+    gap: 48px;
 }
 
 .symbols-container {
@@ -39,7 +41,7 @@
 
 .skills-container {
     padding-top: 180px;
-    max-width: 560px;
+    max-width: 471px;
     height: 492px;
     display: flex;
     gap: 40px;
