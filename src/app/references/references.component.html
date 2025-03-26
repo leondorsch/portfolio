@@ -2,22 +2,31 @@
     <div class="reference-wrapper">
         <div class="reference-info-container">
             <img class="apostrophe-style" src="assets/img/apostrophe.png" alt="">
-            <span>Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.</span>
+            <span *ngIf="anjaSelected"> {{ 'referenceAnja' | translate }}</span>
+            <span *ngIf="dennisSelected"> {{ 'referenceDennis' | translate }}</span>
+            <span *ngIf="danielSelected"> {{ 'referenceDaniel' | translate }}</span>
             <div class="reference-author-container">
                 <div class="reference-line"></div>
-                <span>V.Schuster - Team Partner</span>
+                <span *ngIf="anjaSelected">{{nameAnja}} - {{ 'engineer' | translate }}</span>
+                <span *ngIf="dennisSelected">{{nameDennis}} - {{ 'teamPartner' | translate }}</span>
+                <span *ngIf="danielSelected">{{nameDaniel}} - {{ 'teamPartner' | translate }}</span>
             </div>
         </div>
         <div class="author-img-container">
-            <img src="assets/img/reference-img.png" alt="">
+            <img *ngIf="anjaSelected" [src]="pictureAnja" alt="">
+            <img *ngIf="dennisSelected" [src]="pictureDennis" alt="">
+            <img *ngIf="danielSelected" [src]="pictureDaniel" alt="">
         </div>
         <div class="author-line"></div>
     </div>
     <div class="forward-and-back-container">
-        <img src="assets/img/arrow_back.png" alt="">
-        <div class="ellipse-active"></div>
-        <div class="ellipse-unactive"></div>
-        <div class="ellipse-unactive"></div>
-        <img src="assets/img/arrow_forward.png" alt="">
+        <img (click)="previousReference()" src="assets/img/arrow_back.png" alt="">
+        <div class="ellipse-wrapper">
+            <div [class.ellipse-active]="anjaSelected" class="ellipse-unactive"></div>
+            <div [class.ellipse-active]="dennisSelected" class="ellipse-unactive"></div>
+            <div [class.ellipse-active]="danielSelected" class="ellipse-unactive"></div>
+        </div>
+
+        <img (click)="nextReference()" src="assets/img/arrow_forward.png" alt="">
     </div>
 </div>

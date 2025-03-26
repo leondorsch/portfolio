@@ -42,7 +42,11 @@
                 <span>Material Design</span>
             </div>
         </div>
-        <div><img src="assets/img/16. Interest.png" alt=""></div>
+        
+        <div class="learning-container">
+            <img *ngIf="showOverlay" class="learning-overlay" src="assets/img/learning-overlay.png" alt="">
+            <img (mouseover)="showOverlay = true" (mouseleave)="showOverlay = false" class="learning-img" src="assets/img/16. Interest.png" alt="">
+        </div>
     </div>
 
     <div class="skills-container">

@@ -14,20 +14,64 @@
     </div>
 
     <div class="project-container">
-        <div class="project">
-            <img class="project-img" src="assets/img/Pollo loco.png" alt="">
+        <div (mouseover)="showPolloLoco = true" (mouseleave)="showPolloLoco = false" class="project">
+            <div *ngIf="showPolloLoco" class="overlay-container">
+                <div class="button-container">
+                    <button>Github</button>
+                    <button>Live test</button>
+                </div>
+                <div class="text-container">
+                    <span>El Pollo Loco</span>
+                    <span>{{ 'portfolioEPL' | translate }}</span>
+                    <span>JavaScript | HTML | CSS</span>
+                </div>
+            </div>
+            <img [class.zoom-img] ="showPolloLoco" class="project-img" src="assets/img/Pollo loco.png" alt="">
             <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
         </div>
-        <div class="project">
-            <img class="project-img" src="assets/img/Join.png" alt="">
+        <div (mouseover)="showJoin = true" (mouseleave)="showJoin = false" class="project">
+            <div *ngIf="showJoin" class="overlay-container">
+                <div class="button-container">
+                    <button>Github</button>
+                    <button>Live test</button>
+                </div>
+                <div class="text-container">
+                    <span>Join</span>
+                    <span>{{ 'portfolioJoin' | translate }}</span>
+                    <span>Angular | TypeScript | HTML | CSS | Firebase </span>
+                </div>
+            </div>
+            <img [class.zoom-img] ="showJoin" class="project-img" src="assets/img/Join.png" alt="">
             <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
         </div> 
-        <div class="project">
-            <img class="project-img" src="assets/img/Pokedex.png" alt="">
+        <div (mouseover)="showPokedex = true" (mouseleave)="showPokedex = false" class="project">
+            <div *ngIf="showPokedex" class="overlay-container">
+                <div class="button-container">
+                    <button>Github</button>
+                    <button>Live test</button>
+                </div>
+                <div class="text-container">
+                    <span>Pokédex</span>
+                    <span>{{ 'portfolioPoke' | translate }}</span>
+                    <span>JavaScript | HTML | CSS | Api </span>
+                </div>
+            </div>
+            <img [class.zoom-img] ="showPokedex" class="project-img" src="assets/img/Pokedex.png" alt="">
             <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
         </div>
-        <div class="project">
-            <img class="project-img" src="assets/img/Dabubble.png" alt="">
+        <div (mouseover)="showDaBubble = true" (mouseleave)="showDaBubble = false" class="project">
+            <div *ngIf="showDaBubble" class="overlay-container">
+                <div class="button-container">
+                    <button>Github</button>
+                    <button>Live test</button>
+                </div>
+                <div class="text-container">
+                    <span>DABubble</span>
+                    <span>{{ 'portfolioDaBubble' | translate }}</span>
+                    <span>Angular | TypeScript | Firebase</span>
+                </div>
+            </div>
+            <img [class.zoom-img] ="showDaBubble" class="project-img" src="assets/img/Dabubble.png" alt="">
             <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
         </div>
         <img class="green-shadow" src="assets/img/Green shadow.png" alt="">

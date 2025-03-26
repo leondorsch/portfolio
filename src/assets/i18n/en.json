@@ -27,8 +27,20 @@
 	"scrollDown": "scroll down",
 	"sendMessage": "Send message",
 	"skills": "Skills",
-	"skillsContact": "Contact me!",
-	"skillsDescription": "Throughout my journey, I've been able to work on mutliple projects and deepen my understanding of front-end technologies (HTML, CSS, JavaScript, etc.). For me, learning new things is essential to keep up with the rapid changes in web development.",
+	"skillsContact": "Get in touch",
+	"skillsDescription": "Throughout my journey, I've been able to work on mutliple projects and deepen my understanding of front-end technologies. For me, learning new things is essential to keep up with the rapid changes in web development.",
 	"skillsNav": "Skills",
-	"workLocation": "Since I'm located in Munich, my work is primarily done from here. I am also open to work remotly or relocate!"
+	"workLocation": "Since I'm located in Munich, my work is primarily done from here. I am also open to work remotly or relocate!",
+	"portfolioEPL": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+	"portfolioJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+	"portfolioPoke": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+	"portfolioDaBubble": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+	"teamPartner": "Team Partner",
+	"engineer":"Fullstack Engineer",
+	"referenceAnja": "Leon is ambitious and learns new things really quickly. When he takes on a topic, he works with focus and finds solutions fast. He thinks logically, approaches problems in a structured way, and always contributes great ideas. You can clearly see that he enjoys developing himself further.",
+	"referenceDennis": "Leon really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+	"referenceDaniel": "Leon was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+	"nameRequired": "Your name is required",
+	"emailRequired": "Your email is required",
+	"messageRequired": "Your message is empty"
 }

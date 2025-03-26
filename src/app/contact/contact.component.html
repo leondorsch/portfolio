@@ -15,21 +15,42 @@
             <span>{{ 'needFrontend' | translate }} <span>{{ 'contactMe' | translate }}</span></span>
         </div>
         <div class="form-section-wrapper">
-            <form class="contact-form" action="">
-                <input class="name-input" type="text" placeholder="{{ 'placeholderName' | translate }}">
-                <input class="email-input" type="email" placeholder="{{ 'placeholderEmail' | translate }}">
-                <input class="message-input" type="text" placeholder="{{ 'placeholderMessage' | translate }}">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
+
+                <label for="name"></label>
+                <input [class.green-border]="name.valid && name.touched" [class.red-border]= "!name.valid && name.touched" #name="ngModel" [(ngModel)]="contactData.name" class="name-input" id="name" name="name"
+                    type="text" placeholder="{{ 'placeholderName' | translate }}" required>
+                <span class="name-error-text" *ngIf="!name.valid && name.touched">{{ 'nameRequired' | translate }}</span>
+                <img *ngIf="!name.valid && name.touched" class="name-alert-img" src="assets/img/input-alert.png" alt="">
+                <img *ngIf="name.valid && name.touched" class="name-fine-img" src="assets/img/input-fine.png" alt="">
+
+                <label for="email"></label>
+                <input [class.green-border]="email.valid && email.touched" [class.red-border]= "!email.valid && email.touched" #email="ngModel" [(ngModel)]="contactData.email" class="email-input" id="email" name="email"
+                    type="email" placeholder="{{ 'placeholderEmail' | translate }}" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <span class="email-error-text" *ngIf="!email.valid && email.touched">{{ 'emailRequired' | translate }}</span>
+                <img *ngIf="!email.valid && email.touched" class="email-alert-img" src="assets/img/input-alert.png" alt="">
+                <img *ngIf="email.valid && email.touched" class="email-fine-img" src="assets/img/input-fine.png" alt="">
+
+                <label for="message"></label>
+                <textarea [class.green-border]="message.valid && message.touched" [class.red-border]= "!message.valid && message.touched"  #message="ngModel" [(ngModel)]="contactData.message" class="message-input" name="message"
+                    id="message" placeholder="{{ 'placeholderMessage' | translate }}" required></textarea>
+                <span class="message-error-text" *ngIf="!message.valid && message.touched">{{ 'messageRequired' | translate }}</span>
+                <img *ngIf="!message.valid && message.touched" class="message-alert-img" src="assets/img/input-alert.png" alt="">
+                <img *ngIf="message.valid && message.touched" class="message-fine-img" src="assets/img/input-fine.png" alt="">
+
                 <div class="checkbox-container">
-                    <input type="checkbox">
-                    <span>{{ 'iveRead' | translate }}<a style="color: #9747FF;" href=""> {{ 'Policy' | translate }} </a>{{ 'processDataText' | translate }}</span>
+                    <input type="checkbox" required>
+                    <span>{{ 'iveRead' | translate }}<a style="color: #9747FF;" href=""> {{ 'Policy' | translate }}
+                        </a>{{ 'processDataText' | translate }}</span>
                 </div>
-                <button disabled>{{ 'sendMessage' | translate }}</button>
+                <button type="submit" value="Submit">{{ 'sendMessage' | translate }}</button>
             </form>
             <div class="go-up-btn-container">
                 <img src="assets/img/4. Go up button.png" alt="">
             </div>
             <img src="assets/img/Purple shadow 2.png" alt="">
         </div>
-        
+
     </div>
 </div>

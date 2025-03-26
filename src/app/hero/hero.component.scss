@@ -52,6 +52,7 @@
     >span {
         color: white;
         font-size: 90px;
+        white-space: nowrap;
     }
 }
 
@@ -66,15 +67,14 @@
         background-color: #70E61C;
         color: white;
         height: 58px;
-        width: 165px;
         border-radius: 10px;
         border: unset;
         font-size: 23px;
-
+        transition: all 125ms ease-in-out;
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
             background-color: #9747FF;
-            transition: all 75ms ease;
+            
         }
     }
 }
@@ -109,6 +109,12 @@
     margin-right: 42px;
     display: flex;
     gap: 42px;
+    >a{
+        transition: all 125ms ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
 }
 
 .scroll-down-container {

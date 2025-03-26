@@ -59,9 +59,26 @@
 }
 
 .project-img {
-    >img {
-        display: flex;
-        z-index: 3;
+    display: flex;
+    
+
+}
+
+.zoom-img {
+    transform: scale(1.6) translateY(-50px);
+    filter: brightness(20%);
+    animation: zoom;
+    animation-duration: 75ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1) translateY(0px);
+    }
+    100%{
+        transform: scale(1.6) translateY(-50px);
     }
 }
 
@@ -90,4 +107,93 @@
     position: absolute;
     display: flex;
     z-index: -1;
+}
+
+.overlay-container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 3;
+    gap: 64px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 86px;
+
+    :nth-child(1) {
+        width: 137;
+        height: 58;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        gap: 10px;
+        border-radius: 10px;
+        border-width: 1px;
+        border: 1px solid rgba(28, 218, 230, 1);
+        background: unset;
+        font-size: 23px;
+        color: white;
+
+        &:hover {
+            background-color: rgba(28, 218, 230, 1);
+        }
+    }
+
+    :nth-child(2) {
+        width: 152;
+        height: 58;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        gap: 10px;
+        border-radius: 10px;
+        background: rgba(151, 71, 255, 1);
+        border: none;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: white;
+
+        &:hover {
+            background-color: rgba(112, 230, 28, 1);
+        }
+    }
+}
+
+.text-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 350px;
+    padding-right: 45px;
+    padding-left: 45px;
+    gap: 27px;
+
+    :nth-child(1) {
+        color: #9747FF;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    :nth-child(2) {
+        color: black;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    :nth-child(3) {
+        color: rgba(112, 230, 28, 1);
+        font-size: 23px;
+    }
 }

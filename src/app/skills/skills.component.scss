@@ -16,12 +16,13 @@
     gap: 80px;
 }
 
-.symbols{
+.symbols {
     max-width: 664px;
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
-    > img {
+
+    >img {
         width: 54px;
         height: 60px;
     }
@@ -37,6 +38,31 @@
     text-align: center;
     gap: 10px;
     padding-top: 12px;
+
+    >img {
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            animation: logoupdown;
+            animation-duration: 0.75s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes logoupdown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-16px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .skills-container {
@@ -46,6 +72,7 @@
     display: flex;
     gap: 40px;
     flex-direction: column;
+
     >button {
         display: flex;
         align-items: center;
@@ -54,18 +81,21 @@
         background-color: #70E61C;
         color: white;
         height: 58px;
-        width: 200px;
+        width: fit-content;
         border-radius: 10px;
         border: unset;
         font-size: 23px;
         white-space: nowrap;
+        transition: all 125ms ease-in-out;
+
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
             background-color: #9747FF;
-            transition: all 75ms ease;
+
         }
     }
-    :nth-child(2){
+
+    :nth-child(2) {
         width: 100%;
     }
 }
@@ -74,7 +104,8 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    >h4{
+
+    >h4 {
         font-size: 90px;
         line-height: 120%;
     }
@@ -97,6 +128,43 @@
     font-weight: 700;
 }
 
-.skill-purple-text{
+.skill-purple-text {
     color: #9747FF;
+}
+
+.learning-img {
+    transition: all 0.75ms ease-in-out;
+
+    &:hover {
+        filter: brightness(0) invert(1);
+    }
+}
+
+.learning-container {
+    position: relative;
+}
+
+.learning-overlay {
+    animation: overlay;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    position: absolute;
+    width: 188px;
+    height: 129px;
+    top: -101px;
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

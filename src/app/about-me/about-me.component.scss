@@ -3,6 +3,7 @@
     margin: 0 auto;
     display: flex;
     position: relative;
+    z-index: 3;
 }
 
 .about-me-headline {
@@ -16,7 +17,7 @@
     padding-left: 100px;
     gap: 35px;
     width: 471px !important;
-    height: 133;
+    height: 133px;
 }
 
 .about-me-info-container {
@@ -29,22 +30,15 @@
     display: flex;
     gap: 16px;
     align-items: center;
-
-    >img {
-        transition: all 125ms ease-in-out;
-
-        &:hover {
-            transform: scale(1.5);
-        }
-
-        display: flex;
-        gap: 10px;
-        padding-right: 2px;
-        padding-left: 2px;
-    }
-
     >span {
         font-size: 16px;
+    }
+}
+
+.about-me-img {
+    transition: all 125ms ease-in-out;
+    &:hover{
+        transform: scale(1.2);
     }
 }
 
@@ -71,11 +65,13 @@
     max-height: 647px;
     padding-top: 60px;
     display: flex;
+    z-index: 1;
 }
 
 .curved-section-container {
     position: absolute;
-    z-index: -1;
+    display: flex;
+    z-index: 2;
     margin-top: -288px;
     height: 878.5px;
     width: 100%;
@@ -86,4 +82,10 @@
 
 .about-me-letsconnect {
     padding-top: 16px;
+}
+
+.about-me-text {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
 }

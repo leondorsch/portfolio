@@ -41,27 +41,20 @@
     height: 32px;
     width: 92px;
     >button {
+        border: 1px solid #70E61C;
         border-radius: 10px;
         font-family: 'Poppins';
         font-size: 18px;
         color: white;
         background-color: unset;
+        &:hover {
+            border: 1px solid #9747FF;
+            background-color: #9747FF;
+        }
     }
-    
-    
 }
 
-.clicked{
+.active {
+    pointer-events: none;
     background-color: #70E61C !important;
-    border: unset;
-    cursor: unset;
-}
-
-.notClicked {
-    border: 1px solid #70E61C ;
-    &:hover{
-        background-color: #9747FF !important;
-        border: unset;
-    }
-    
 }

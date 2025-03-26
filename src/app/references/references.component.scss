@@ -52,7 +52,6 @@
     justify-content: center;
     img{
         height: 100%;
-        rotate: 90deg;
         aspect-ratio: 1 / 1;
     }
 }
@@ -81,10 +80,11 @@
 }
 
 .forward-and-back-container{
+    height: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     >img {
         padding: 4px;
         &:hover {
@@ -98,7 +98,7 @@
 .ellipse-active{
     height: 8px;
     width: 8px;
-    background: #70E61C;
+    background: #70E61C !important;
     border-radius: 50px;
 }
 
@@ -107,4 +107,10 @@
     width: 8px;
     background: #9747FF;
     border-radius: 50px;
+}
+
+.ellipse-wrapper {
+    display: flex;
+    gap: 20px;
+    position: relative;
 }

@@ -14,7 +14,7 @@ h6 {
     display: flex;
     justify-content: space-around;
 
-   
+
 }
 
 .contact-text-container {
@@ -48,7 +48,9 @@ h6 {
     align-items: center;
     flex-direction: column;
     gap: 32px;
-
+    max-width: 617px;
+    position: relative;
+    z-index: 0;
     >button {
         background: #B6B6B6;
         width: 253px;
@@ -92,7 +94,7 @@ h6 {
 .checkbox-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
 }
 
 input[type="checkbox"] {
@@ -142,4 +144,83 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+.message-error-text {
+    color: #E61C40;
+    position: absolute;
+    bottom: 144px;
+    left: -4px;
+}
+
+.email-error-text {
+    color: #E61C40;
+    position: absolute;
+    top: 208px;
+    left: -4px;
+}
+
+.name-error-text {
+    color: #E61C40;
+    position: absolute;
+    top: 88px;
+    left: -4px;
+}
+
+.red-border {
+    border: 1px solid #E61C40;
+}
+
+.green-border {
+    border: 1px solid #70E61C;
+}
+
+.name-alert-img {
+    display: flex;
+    z-index: 1000;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 48px;
+    right: 8px;
+}
+
+.name-fine-img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 48px;
+    right: 8px;
+}
+
+.email-alert-img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 164px;
+    right: 8px;
+}
+
+.email-fine-img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 164px;
+    right: 8px;
+}
+
+.message-alert-img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: 348px;
+    right: 8px;
+}
+
+.message-fine-img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: 440px;
+    right: 8px;
 }
