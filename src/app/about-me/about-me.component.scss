@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: flex;
     position: relative;
-    z-index: 3;
+    z-index: -1;
 }
 
 .about-me-headline {
@@ -71,7 +71,7 @@
 .curved-section-container {
     position: absolute;
     display: flex;
-    z-index: 2;
+    z-index: -1;
     margin-top: -288px;
     height: 878.5px;
     width: 100%;

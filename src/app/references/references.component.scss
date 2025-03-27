@@ -67,9 +67,11 @@
     height: 0;
     position: absolute;
     right: 0;
-    min-width: 564px;
+    min-width: 24.4%;
+    flex-grow: 1;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    z-index: -1;
 }
 
 .reference-wrapper {

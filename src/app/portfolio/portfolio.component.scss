@@ -16,6 +16,9 @@
 .portfolio-head-text {
     >h5 {
         font-size: 90px;
+        background-color: #141D2F;
+        display: flex;
+        z-index: 3;
     }
 
     display: flex;
@@ -32,7 +35,8 @@
     position: absolute;
     left: 0;
     border: solid 2px #9747FF;
-    min-width: 300px;
+    flex: 1;
+    min-width: 22%;
     height: 0;
 }
 

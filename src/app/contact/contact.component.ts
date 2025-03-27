@@ -9,7 +9,6 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactComponent {
   isChecked = false;
-  mailTest = true;
 
   http = inject(HttpClient);
   contactData = {
@@ -18,8 +17,10 @@ export class ContactComponent {
     message: "",
   }
 
+  mailTest = false;
+
   post = {
-    endPoint: 'https://leon-dorsch.de/sendMail.php',
+    endPoint: 'https://leon-dorsch/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -30,7 +31,6 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -47,7 +47,5 @@ export class ContactComponent {
 
       ngForm.resetForm();
     }
-
-
   }
 }

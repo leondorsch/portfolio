@@ -92,23 +92,27 @@
     z-index: 1000;
     align-items: center;
     gap: 42px;
+    margin-left: 136px;
 }
 
 .socials-line {
-    display: flex;
-    align-items: flex-end;
     flex: 1;
-    min-width: 100px;
+    min-width: 22%;
     height: 0;
     border: 2px solid rgba(112, 230, 28, 1);
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 230px;
 }
 
 .socials {
     margin-right: 42px;
     display: flex;
     gap: 42px;
+    z-index: 3;
+    background-color: #141D2F;
     >a{
         transition: all 125ms ease-in-out;
         &:hover{

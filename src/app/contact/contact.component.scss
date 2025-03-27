@@ -8,6 +8,9 @@ h6 {
     text-align: center;
     font-size: 90px;
     padding-bottom: 48px;
+    background-color: #141D2F;
+    display: flex;
+    z-index: 3;
 }
 
 .contact-wrapper {
@@ -23,24 +26,14 @@ h6 {
     gap: 24px;
     max-width: 573px;
 
-    :nth-child(1) {
-        font-family: Poppins;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 120%;
-        letter-spacing: 0%;
-    }
-
-    :nth-child(2) {
+    :nth-child(3) {
         max-width: 473px;
     }
+}
 
-    :nth-child(3) {
-        >span {
-            font-weight: 700;
-            font-size: 16px;
-        }
-    }
+.contactQuestion {
+    font-weight: 700;
+    font-size: 32px;
 }
 
 .contact-form {
@@ -75,6 +68,7 @@ h6 {
 .button-active {
     transition: all 125ms ease-in-out;
     background-color: #70E61C !important;
+
     &:hover {
         transform: scale(1.1);
         background-color: #9747FF !important;
@@ -145,13 +139,30 @@ input[type=checkbox]:checked+label {
     justify-content: center;
 }
 
+.contact-info-head-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .contact-line {
     height: 0;
     border: 2px solid #70E61C;
     position: absolute;
     right: 0;
-    width: 920px;
-    margin-bottom: 24px;
+    min-width: 40%;
+    flex: 1;
+    margin-bottom: 36px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.question-line {
+    height: 0;
+    border: 2px solid #1CDAE6;
+    position: absolute;
+    left: 0;
+    min-width: 20%;
+    flex: 1;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
@@ -173,17 +184,19 @@ input[type=checkbox]:checked+label {
     display: flex;
     align-items: center;
     justify-content: end;
+
     >a {
         background-image: url('/assets/img/4. Go up button.png');
         background-repeat: no-repeat;
         height: 40px;
         width: 40px;
-       &:hover {
-        background-image: url('/assets/img/go-up-btn-hover.png');
-        background-repeat: no-repeat;
-        height: 40px;
-        width: 40px;
-       }
+
+        &:hover {
+            background-image: url('/assets/img/go-up-btn-hover.png');
+            background-repeat: no-repeat;
+            height: 40px;
+            width: 40px;
+        }
     }
 }
 
