@@ -60,7 +60,13 @@
 
 .project-img {
     display: flex;
-    
+
+
+}
+
+.project-img-dabubble {
+    display: flex;
+    z-index: 9999;
 
 }
 
@@ -74,10 +80,11 @@
 }
 
 @keyframes zoom {
-    0%{
+    0% {
         transform: scale(1) translateY(0px);
     }
-    100%{
+
+    100% {
         transform: scale(1.6) translateY(-50px);
     }
 }
@@ -123,9 +130,18 @@
     display: flex;
     gap: 86px;
 
-    :nth-child(1) {
-        width: 137;
-        height: 58;
+
+
+
+}
+
+.github-btn {
+    >button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 152px;
+        height: 58px;
         padding-top: 15px;
         padding-right: 30px;
         padding-bottom: 15px;
@@ -143,9 +159,15 @@
         }
     }
 
-    :nth-child(2) {
-        width: 152;
-        height: 58;
+}
+
+.live-btn {
+    >button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 152px;
+        height: 58px;
         padding-top: 15px;
         padding-right: 30px;
         padding-bottom: 15px;
@@ -179,6 +201,7 @@
     padding-right: 45px;
     padding-left: 45px;
     gap: 27px;
+    
 
     :nth-child(1) {
         color: #9747FF;

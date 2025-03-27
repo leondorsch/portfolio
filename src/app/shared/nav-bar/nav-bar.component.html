@@ -3,9 +3,9 @@
         <img src="assets/img/löwe.png" alt="">
         <div class="nav-bar-links">
             <div class="links">
-                <a href="">{{'aboutMeNav' | translate}}</a>
-                <a href="">{{'skillsNav' | translate}}</a>
-                <a href="">Portfolio</a>
+                <a href="#aboutMe" fragment="aboutMe">{{'aboutMeNav' | translate}}</a>
+                <a href="#skills">{{'skillsNav' | translate}}</a>
+                <a href="#portfolio">Portfolio</a>
             </div>
             <div class="nav-bar-buttons">
                 <button (click)="useLanguage('de')" [class.active]="statusDE">DE</button>

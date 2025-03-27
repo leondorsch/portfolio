@@ -73,6 +73,14 @@
     gap: 40px;
     flex-direction: column;
 
+    
+
+    :nth-child(2) {
+        width: 100%;
+    }
+}
+
+.skills-button {
     >button {
         display: flex;
         align-items: center;
@@ -93,10 +101,6 @@
             background-color: #9747FF;
 
         }
-    }
-
-    :nth-child(2) {
-        width: 100%;
     }
 }
 

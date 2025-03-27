@@ -42,5 +42,6 @@
 	"referenceDaniel": "Leon was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
 	"nameRequired": "Your name is required",
 	"emailRequired": "Your email is required",
-	"messageRequired": "Your message is empty"
+	"messageRequired": "Your message is empty",
+	"checkedRequired": "Please accept the privacy policy."
 }

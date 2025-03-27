@@ -42,5 +42,6 @@
 	"referenceDaniel": "Leon war ein herausragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
 	"nameRequired": "Ihr Name ist erforderlich",
 	"emailRequired": "Ihre E-Mail ist erforderlich",
-	"messageRequired": "Ihre Nachricht ist leer"
+	"messageRequired": "Ihre Nachricht ist leer",
+	"checkedRequired": "Bitte akzeptieren Sie die Datenschutzerklärung"
 }
