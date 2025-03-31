@@ -2,22 +2,24 @@
     <div class="reference-wrapper">
         <div class="reference-info-container">
             <img class="apostrophe-style" src="assets/img/apostrophe.png" alt="">
-            <span *ngIf="anjaSelected"> {{ 'referenceAnja' | translate }}</span>
-            <span *ngIf="dennisSelected"> {{ 'referenceDennis' | translate }}</span>
-            <span *ngIf="danielSelected"> {{ 'referenceDaniel' | translate }}</span>
+            <span class="text-blend-in" *ngIf="anjaSelected"> {{ 'referenceAnja' | translate }}</span>
+            <span class="text-blend-in" *ngIf="dennisSelected"> {{ 'referenceDennis' | translate }}</span>
+            <span class="text-blend-in" *ngIf="danielSelected"> {{ 'referenceDaniel' | translate }}</span>
             <div class="reference-author-container">
                 <div class="reference-line"></div>
-                <span *ngIf="anjaSelected">{{nameAnja}} - {{ 'engineer' | translate }}</span>
-                <span *ngIf="dennisSelected">{{nameDennis}} - {{ 'teamPartner' | translate }}</span>
-                <span *ngIf="danielSelected">{{nameDaniel}} - {{ 'teamPartner' | translate }}</span>
+                <span class="text-blend-in" *ngIf="anjaSelected">{{nameAnja}} - {{ 'engineer' | translate }}</span>
+                <span class="text-blend-in" *ngIf="dennisSelected">{{nameDennis}} - {{ 'teamPartner' | translate }}</span>
+                <span class="text-blend-in" *ngIf="danielSelected">{{nameDaniel}} - {{ 'teamPartner' | translate }}</span>
             </div>
         </div>
-        <div class="author-img-container">
-            <img *ngIf="anjaSelected" [src]="pictureAnja" alt="">
-            <img *ngIf="dennisSelected" [src]="pictureDennis" alt="">
-            <img *ngIf="danielSelected" [src]="pictureDaniel" alt="">
+        <div class="author-wrapper">
+            <div class="author-img-container">
+                <img class="text-blend-in" *ngIf="anjaSelected" [src]="pictureAnja" alt="">
+                <img class="text-blend-in" *ngIf="dennisSelected" [src]="pictureDennis" alt="">
+                <img class="text-blend-in" *ngIf="danielSelected" [src]="pictureDaniel" alt="">
+            </div>
+            <div class="author-line"></div>
         </div>
-        <div class="author-line"></div>
     </div>
     <div class="forward-and-back-container">
         <img (click)="previousReference()" src="assets/img/arrow_back.png" alt="">

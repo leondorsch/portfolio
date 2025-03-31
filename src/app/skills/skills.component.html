@@ -42,10 +42,16 @@
                 <span>Material Design</span>
             </div>
         </div>
-        
         <div class="learning-container">
             <img *ngIf="showOverlay" class="learning-overlay" src="assets/img/learning-overlay.png" alt="">
             <img (mouseover)="showOverlay = true" (mouseleave)="showOverlay = false" class="learning-img" src="assets/img/16. Interest.png" alt="">
+        </div>
+        <div class="skill-info-container-small">
+            <span class="skill-info-head">{{ 'otherSkill' | translate }} <span class="skill-purple-text">{{ 'otherSkillPurple' | translate }}</span>?</span>
+            <span>{{ 'otherSkillInfo' | translate }}</span>
+            <a class="skills-button" href="#contact">
+                <button>{{ 'skillsContact' | translate }}</button>
+            </a>
         </div>
     </div>
 
@@ -59,9 +65,12 @@
         <div class="skill-info-container">
             <span class="skill-info-head">{{ 'otherSkill' | translate }} <span class="skill-purple-text">{{ 'otherSkillPurple' | translate }}</span>?</span>
             <span>{{ 'otherSkillInfo' | translate }}</span>
+            <a class="skills-button" href="#contact">
+                <button>{{ 'skillsContact' | translate }}</button>
+            </a>
         </div>
-        <a class="skills-button" href="#contact">
-            <button>{{ 'skillsContact' | translate }}</button>
-        </a>
+        
     </div>
+
+    
 </div>

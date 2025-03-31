@@ -1,18 +1,27 @@
 <div class="nav-bar-main fontPoppins">
     <div class="nav-bar-content">
-        <img src="assets/img/löwe.png" alt="">
+        <a  href="#"><img src="assets/img/löwe.png" alt=""></a>
         <div class="nav-bar-links">
             <div class="links">
                 <a href="#aboutMe" fragment="aboutMe">{{'aboutMeNav' | translate}}</a>
                 <a href="#skills">{{'skillsNav' | translate}}</a>
                 <a href="#portfolio">Portfolio</a>
             </div>
+            <div [ngClass]="burgerMenuOpen ? 'burger-menu-close' : 'burger-menu-open'" class="burger-menu-btn" (click)="toggleBurgerMenu()" alt=""></div>
             <div class="nav-bar-buttons">
                 <button (click)="useLanguage('de')" [class.active]="statusDE">DE</button>
                 <button (click)="useLanguage('en')" [class.active]="statusENG">EN</button>
             </div>
         </div>
     </div>
-
-
+</div>
+<div *ngIf="burgerMenuOpen" [class.slide-out]="!burgerMenuOpen"  class="burger-menu-container">
+    <a href="#aboutMe" fragment="aboutMe">{{'aboutMeNav' | translate}}</a>
+    <a href="#skills">{{'skillsNav' | translate}}</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">{{'imprint-contact' | translate}}</a>
+    <div class="burger-menu-lang">
+        <a (click)="useLanguage('de')" [class.burger-active]="statusDE">DE</a> /
+        <a (click)="useLanguage('en')" [class.burger-active]="statusENG">EN</a>
+    </div>
 </div>

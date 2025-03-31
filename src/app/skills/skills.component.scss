@@ -6,6 +6,7 @@
     z-index: 2;
     position: relative;
     gap: 48px;
+    padding: 0 100px;
 }
 
 .symbols-container {
@@ -74,6 +75,7 @@
 }
 
 .skills-button {
+    padding-top: 24px;
     >button {
         display: flex;
         align-items: center;
@@ -105,7 +107,6 @@
     >h4 {
         font-size: 90px;
         line-height: 120%;
-        background-color: #141D2F;
         display: flex;
         z-index: 3;
     }
@@ -117,11 +118,17 @@
     border-bottom-left-radius: 50px;
     position: absolute;
     right: 0;
-    min-width: 33%;
+    width: calc(50% - 380px);
 }
 
 .skill-info-container {
     display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skill-info-container-small {
+    display: none;
     flex-direction: column;
     gap: 16px;
 }
@@ -169,5 +176,111 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media ( max-width:1260px){
+
+    .skills-container{
+        padding-top: 240px;
+    }
+    .skills-head{
+        >h4{
+            background-color: unset;
+        }
+    }
+    .skills-main {
+        flex-direction: column-reverse;
+    }
+
+    .skills-line{
+        min-width: 48%;
+    }
+
+    .skill-info-container{
+        display: none;
+    }
+
+    .symbols {
+        margin-top: -182px;
+        gap: 48px;
+        justify-content: center;
+    }
+    .symbols-container {
+        margin-top: 0;
+    }
+
+    .symbol-div{
+        >img{
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    .skill-info-container-small {
+        display: flex;
+        text-align: center;
+    }
+
+    .skills-button {
+        align-self: center;
+    }
+
+    .learning-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px){
+    .skills-container{
+        padding-top: 440px;
+    }
+    .skills-head{
+        >h4{
+            background-color: unset;
+            font-size: 45px;
+        }
+    }
+    .skills-main{
+        padding: 0 25px;
+    }
+
+    .skills-line{
+        min-width: 48%;
+    }
+
+    .skill-info-container{
+        display: none;
+    }
+
+    .symbols {
+        margin-top: -182px;
+        gap: 48px;
+        justify-content: center;
+    }
+    .symbols-container {
+        margin-top: 0;
+    }
+
+    .symbol-div{
+        >img{
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    .skill-info-container-small {
+        display: flex;
+        text-align: end;
+    }
+
+    .skills-button {
+        align-self: center;
+    }
+
+    .learning-container{
+        display: flex;
+        justify-content: center;
     }
 }

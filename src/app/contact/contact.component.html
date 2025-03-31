@@ -15,7 +15,7 @@
             <span>
                 {{ 'contactInfo' | translate }}
             </span>
-            <span>{{ 'needFrontend' | translate }} <span>{{ 'contactMe' | translate }}</span></span>
+            <span>{{ 'needFrontend' | translate }} <span><b>{{ 'contactMe' | translate }}</b></span></span>
         </div>
         <div class="form-section-wrapper">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
@@ -53,13 +53,15 @@
                     src="assets/img/input-alert.png" alt="">
                 <img *ngIf="message.valid && message.touched" class="message-fine-img" src="assets/img/input-fine.png"
                     alt="">
-
+                <div *ngIf="wasSent" class="email-notification">
+                    <span>{{ 'emailNotification' | translate }}</span>
+                </div>
                 <div class="checkbox-container">
                     <input id="checkbox" type="checkbox" name="checkbox" [(ngModel)]="isChecked">
                     <label for="checkbox"></label>
                     <span>
                         {{ 'iveRead' | translate }}
-                        <a style="color: #9747FF;" href=""> {{ 'Policy' | translate }}</a>
+                        <a style="color: #9747FF;" href="privacyPolicy"> {{ 'Policy' | translate }}</a>
                         {{ 'processDataText' | translate }}
                     </span>
                 </div>
@@ -77,6 +79,5 @@
             </div>
             <img src="assets/img/Purple shadow 2.png" alt="">
         </div>
-
     </div>
 </div>

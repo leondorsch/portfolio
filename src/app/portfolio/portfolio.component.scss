@@ -41,8 +41,8 @@
 }
 
 .project-container {
-    padding-left: 100px;
     display: flex;
+    justify-content: center;
     z-index: 1;
     flex-wrap: wrap;
     gap: 32px;
@@ -50,6 +50,7 @@
 
 .project {
     max-width: 603px;
+    width: 100%;
     max-height: 603px;
     border: 1px solid rgba(112, 230, 28, 1);
     background-color: #141D2F;
@@ -60,6 +61,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    aspect-ratio: 1 / 1;
 }
 
 .project-img {
@@ -125,7 +127,7 @@
     bottom: 0;
     display: flex;
     z-index: 3;
-    gap: 64px;
+    gap: 42px;
     flex-direction: column;
     align-items: center;
 }
@@ -133,10 +135,6 @@
 .button-container {
     display: flex;
     gap: 86px;
-
-
-
-
 }
 
 .github-btn {
@@ -222,5 +220,156 @@
     :nth-child(3) {
         color: rgba(112, 230, 28, 1);
         font-size: 23px;
+    }
+}
+
+.text-container-dabubble {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 350px;
+    padding-right: 45px;
+    padding-left: 45px;
+    gap: 27px;
+
+    :nth-child(3) {
+        color: black;
+        font-size: 23px;
+        text-align: center;
+    }
+    
+
+    :nth-child(2) {
+        color: #9747FF;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    :nth-child(1) {
+        color: black;
+        font-size: 23px;
+        text-align: center;
+    }
+}
+
+@media (max-width:1260px){
+    .portfolio-main{
+        align-items: center;
+    }
+
+    .portfolio-line {
+        min-width: 32%;
+    }
+
+    .portfolio-head {
+        padding: 0 25px;
+    }
+
+    .portfolio-info {
+        padding: 0 25px;
+    }
+
+    .project-container {
+        padding: 24px 25px 0 25px;
+        justify-content: center;
+    }
+
+    .button-container {
+        gap: 24px;
+    }
+
+    .github-btn{
+        >button{
+            width: 100px;
+        }
+    }
+
+    .live-btn{
+        >button{
+            width: 100px;
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .portfolio-head-text{
+        >h5{
+            font-size: 45px;
+        }
+    }
+    .portfolio-head {
+        padding: 0 25px;
+    }
+
+    .portfolio-info {
+        padding: 0 25px;
+    }
+
+    .project-container {
+        padding: 24px 25px 0 25px;
+        justify-content: center;
+    }
+
+    .project-shadow {
+        top: 112px;
+    }
+
+    .button-container {
+        gap: 24px;
+    }
+
+    .project-img {
+        height: 240px;
+    }
+
+    .github-btn{
+        >button{
+            width: 100px;
+        }
+    }
+
+    .live-btn{
+        >button{
+            width: 100px;
+        }
+    }
+
+    .overlay-container {
+        bottom: unset;
+    }
+
+    .text-container{
+        white-space: nowrap;
+        background-color: unset;
+        height: unset;
+        :nth-child(2){
+            display: none;
+        }
+        :nth-child(3){
+            display: none;
+        }
+    }
+
+    .text-container-dabubble{
+        :nth-child(2){
+            display: none;
+        }
+        :nth-child(3){
+            display: none;
+        }
+    }
+
+    .green-shadow{
+        top: 5000px;
+        width: 246px;
+    }
+
+    .blue-shadow{
+        top: 4560px;
+        width: 372px;
     }
 }

@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactComponent {
   isChecked = false;
-
+  wasSent = false;
   http = inject(HttpClient);
   contactData = {
     name: "",
@@ -17,10 +17,8 @@ export class ContactComponent {
     message: "",
   }
 
-  mailTest = false;
-
   post = {
-    endPoint: 'https://leon-dorsch/sendMail.php',
+    endPoint: 'https://leon-dorsch.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -31,7 +29,8 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    this.wasSent = true;
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -43,9 +42,6 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
-    }
+    } 
   }
 }

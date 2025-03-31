@@ -16,6 +16,9 @@ import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SharedComponent } from './shared/shared.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { SharedComponent } from './shared/shared.component';
     ReferencesComponent,
     ContactComponent,
     FooterComponent,
-    SharedComponent
+    SharedComponent,
+    ImprintComponent,
+    PrivacyPolicyComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,
