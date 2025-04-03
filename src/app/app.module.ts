@@ -48,7 +48,7 @@ import { MainContentComponent } from './main-content/main-content.component';
       }
     })
   ],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
+  providers: [provideHttpClient(withInterceptorsFromDi()), NavBarComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

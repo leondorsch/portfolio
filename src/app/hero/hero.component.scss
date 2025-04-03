@@ -1,12 +1,14 @@
 .hero-main {
-    max-width: 1440px;
-    margin: 0 auto;
     min-height: 100vh;
     background-color: #141D2F;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
+    background-image: url('/assets/img/30. Purple shadow about me.png'), url('/assets/img//52. Blue shadow 1 V2.png');
+    background-position: 20% 16%, 86% 0%;
+    background-size: 30% 42%, 24% 60%;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .person-container {
@@ -60,7 +62,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 240px;
 
     >button {
         box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -96,13 +97,13 @@
     z-index: 1000;
     align-items: center;
     gap: 42px;
-    
+
 }
 
 .socials-line {
     position: absolute;
-    max-width: 20%;
-    width: 100%;
+    width: calc(50% - 640px);
+    min-width: 68px;
     left: 0;
     height: 0;
     border: 2px solid rgba(112, 230, 28, 1);
@@ -151,12 +152,6 @@
     width: 24px;
 }
 
-.shadows-hero-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
 .purple-shadow {
     position: absolute;
     transform: rotate(-46.66 deg);
@@ -176,16 +171,24 @@
 }
 
 @media(max-width: 1260px) {
+    .hero-main {
+        background-position: 10% 20%, 100% 18%;
+        background-size: 30% 42%, 24% 40%;
+    }
+
     .socials-container {
         margin-left: 100px;
     }
+
     .i-am-container {
         display: flex;
         justify-content: center;
-        >span{
+
+        >span {
             font-size: 72px;
         }
     }
+
     .name-container {
         >h1 {
             font-size: 84px;
@@ -197,7 +200,7 @@
         }
     }
 
-    .blue-shadow{
+    .blue-shadow {
         left: 292px;
     }
 
@@ -206,11 +209,17 @@
     }
 }
 
-@media(max-width:840px){
+@media(max-width:840px) {
+
+    .hero-main {
+        background-position: 18% 20%, 88% 16%;
+        background-size: 30% 32%, 24% 32%;
+    }
     .i-am-container {
         height: unset;
         width: unset;
-        >span{
+
+        >span {
             font-size: 32px;
         }
     }
@@ -227,15 +236,11 @@
         }
     }
 
-    .socials-line{
-        max-width: 10%;
-    }
-
-    .socials{
+    .socials {
         background-color: transparent;
     }
 
-    .blue-shadow{
+    .blue-shadow {
         left: 148px;
     }
 
@@ -245,6 +250,11 @@
 }
 
 @media (max-width: 480px) {
+    .hero-main {
+        background-position: 5% 24%, 100% 20%;
+        background-size: 30% 24%, 30% 24%;
+    }
+
     .i-am-container {
         height: unset;
         width: unset;
@@ -293,9 +303,5 @@
 
     .socials {
         margin-right: unset;
-    }
-
-    .socials-line {
-        max-width: 18%;
     }
 }

@@ -16,7 +16,6 @@
 .portfolio-head-text {
     >h5 {
         font-size: 90px;
-        background-color: #141D2F;
         display: flex;
         z-index: 3;
     }
@@ -36,8 +35,10 @@
     left: 0;
     border: solid 2px #9747FF;
     flex: 1;
-    min-width: 22%;
+    width: calc(50% - 640px);
     height: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .project-container {
@@ -67,12 +68,6 @@
 .project-img {
     display: flex;
 
-
-}
-
-.project-img-dabubble {
-    display: flex;
-    z-index: 9999;
 
 }
 
@@ -108,8 +103,6 @@
     width: 428px;
     position: absolute;
     left: 0;
-    top: 3048px;
-
 }
 
 .project-shadow {
@@ -220,39 +213,6 @@
     :nth-child(3) {
         color: rgba(112, 230, 28, 1);
         font-size: 23px;
-    }
-}
-
-.text-container-dabubble {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 350px;
-    padding-right: 45px;
-    padding-left: 45px;
-    gap: 27px;
-
-    :nth-child(3) {
-        color: black;
-        font-size: 23px;
-        text-align: center;
-    }
-    
-
-    :nth-child(2) {
-        color: #9747FF;
-        font-size: 32px;
-        font-weight: 700;
-    }
-
-    :nth-child(1) {
-        color: black;
-        font-size: 23px;
-        text-align: center;
     }
 }
 

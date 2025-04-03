@@ -9,23 +9,29 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavBarComponent {
   statusDE: boolean = false;
-  statusENG: boolean = true;
+  statusDELine: boolean = false
+  statusENG: boolean = false;
   burgerMenuOpen: boolean = false;
 
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService) {
+    this.initializeLanguage();
+  }
 
-  useLanguage(language: string): void {
+  initializeLanguage() {
+    let savedLanguage = localStorage.getItem("currentLanguage") || 'en';
+    this.useLanguage(savedLanguage);
+  }
+
+  useLanguage(language: string) {
+    localStorage.setItem("currentLanguage", language);
     this.translate.use(language);
     this.statusDE = language === 'de';
     this.statusENG = language === 'en';
+    this.statusDELine = language === 'de'
   }
 
   toggleBurgerMenu() {
-    if (!this.burgerMenuOpen) {
-      this.burgerMenuOpen = true
-    } else {
-      this.burgerMenuOpen = false;
-    }
+    this.burgerMenuOpen = !this.burgerMenuOpen;
   }
-
 }
+

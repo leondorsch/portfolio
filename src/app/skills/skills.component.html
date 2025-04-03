@@ -1,5 +1,5 @@
-<div class="skills-main">
-    <div class="symbols-container">
+<div  class="skills-main">
+    <div data-aos="flip-up" class="symbols-container">
         <div class="symbols">
             <div class="symbol-div">
                 <img src="assets/img/Property 1=html.png" alt="">
@@ -55,10 +55,10 @@
         </div>
     </div>
 
-    <div class="skills-container">
+    <div  class="skills-container">
         <div class="skills-head">
             <h4>{{ 'skills' | translate }}</h4>
-            <div class="skills-line"></div>
+            <div [class.line-ger]="status" class="skills-line"></div>
         </div>
         <span>{{ 'skillsDescription' | translate }}
         </span>

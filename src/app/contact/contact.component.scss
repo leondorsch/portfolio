@@ -155,7 +155,7 @@ input[type=checkbox]:checked+label {
     border: 2px solid #70E61C;
     position: absolute;
     right: 0;
-    min-width: 40%;
+    width: calc(50% - 106px);
     flex: 1;
     margin-bottom: 36px;
     border-top-left-radius: 50px;
@@ -167,10 +167,10 @@ input[type=checkbox]:checked+label {
     border: 2px solid #1CDAE6;
     position: absolute;
     left: 0;
-    min-width: 20%;
+    width: calc(50% - 680px);
     flex: 1;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     display: flex;
     z-index: -1
 }
@@ -417,7 +417,7 @@ input[type=checkbox]:checked+label {
 
     .form-section-wrapper{
         >img{
-            top: 7200px;
+            top: 6400px;
             width: 238px;
         }
     }

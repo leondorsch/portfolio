@@ -2,8 +2,8 @@
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
+    z-index: 2;
     position: relative;
-    z-index: -1;
 }
 
 .about-me-headline {
@@ -19,6 +19,8 @@
     gap: 35px;
     width: 471px !important;
     height: 133px;
+    position: relative;
+    z-index: 1;
 }
 
 .about-me-info-container {
@@ -31,6 +33,7 @@
     display: flex;
     gap: 16px;
     align-items: center;
+
     >span {
         font-size: 16px;
     }
@@ -38,47 +41,45 @@
 
 .about-me-img {
     transition: all 125ms ease-in-out;
-    &:hover{
+
+    &:hover {
         transform: scale(1.2);
     }
 }
 
 .personal-img-container {
+    background-image: url('/assets/img/purple-shadow-about-me.png'), url('/assets/img/green-shadow-about-me.png');
+    background-position: 10% 120%, 100% 90%;
+    background-size: 62% 82%, 60% 80%;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: relative;
-
-    :nth-child(1) {
-        position: absolute;
-        transform: rotate(-22deg);
-        top: 140px;
-        z-index: -1;
-    }
-
-    :nth-child(2) {
-        position: absolute;
-        left: 200px;
-        top: 92px;
-        z-index: -1;
-    }
+    z-index: -2;
 }
 
 .profile-img {
     width: 100%;
+    max-width: 620px;
     max-height: 647px;
     display: flex;
-    z-index: 1;
-    margin-top: 80px;
+    margin-top: 100px;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: -3;
 }
 
 .curved-section-container {
-    position: absolute;
+    position: relative;
     display: flex;
-    z-index: -1;
+    z-index: 0;
     height: 878.5px;
     width: 100%;
     background-image: url('/assets/img/28. Hero Background.png');
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    top: 1800px;
+    margin-top: -320px;
 }
 
 .about-me-letsconnect {
@@ -91,58 +92,43 @@
     flex-direction: column;
 }
 
-@media(max-width: 1260px){
-      .about-me-main {
+@media(max-width: 1260px) {
+    .personal-img-container {
+        background-position: 24% 140%, 100% 120%;
+        background-size: 56% 82%, 60% 68%;
+    }
+
+    .about-me-main {
         flex-direction: column-reverse;
-        position: unset;
         align-items: center;
-      }
-      .curved-section-container{
+    }
+
+    .curved-section-container {
         position: relative;
-        position: unset;
-      }
-
-      .profile-img{
-        position: relative;
-        z-index: -1;
-    }
-    .personal-img-container{
-        :nth-child(2){
-            top: 36px;
-            left: 180px;
-        }
     }
 
-    .personal-img-container{
-        :nth-child(1){
-            top: 150px;
-            right: 131px;
-        }
-    }
-
-    .curved-section-container{
+    .curved-section-container {
         background-size: cover;
         margin-top: -492px;
     }
 
-    .about-me-container{
+    .about-me-container {
         padding-left: 25px;
         padding-right: 25px;
     }
+
+    .profile-img {
+        margin-bottom: 0;
+    }
 }
 
-@media(max-width: 840px){
-    .profile-img{
-        position: relative;
-        z-index: -1;
-    }
-
-    .curved-section-container{
+@media(max-width: 840px) {
+    .curved-section-container {
         background-size: cover;
         margin-top: -492px;
     }
 
-    .about-me-container{
+    .about-me-container {
         padding-left: 25px;
         padding-right: 25px;
         width: calc(100% - 50px) !important;
@@ -151,29 +137,5 @@
     .about-me-headline {
         font-size: 45px;
         padding-top: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .personal-img-container{
-        :nth-child(2){
-            top: 36px;
-            left: 48px;
-        }
-    }
-
-    .personal-img-container{
-        :nth-child(1){
-            top: 30px;
-        }
-    }
-}
-
-@media ( max-width: 320px){
-    .personal-img-container{
-        :nth-child(1){
-            top: 30px;
-            left: -68px;
-        }
     }
 }

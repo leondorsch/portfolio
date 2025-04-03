@@ -1,6 +1,6 @@
-<div class="references-main">
+<div  class="references-main">
     <div class="reference-wrapper">
-        <div class="reference-info-container">
+        <div data-aos="fade-left" class="reference-info-container">
             <img class="apostrophe-style" src="assets/img/apostrophe.png" alt="">
             <span class="text-blend-in" *ngIf="anjaSelected"> {{ 'referenceAnja' | translate }}</span>
             <span class="text-blend-in" *ngIf="dennisSelected"> {{ 'referenceDennis' | translate }}</span>
@@ -21,7 +21,7 @@
             <div class="author-line"></div>
         </div>
     </div>
-    <div class="forward-and-back-container">
+    <div  class="forward-and-back-container">
         <img (click)="previousReference()" src="assets/img/arrow_back.png" alt="">
         <div class="ellipse-wrapper">
             <div [class.ellipse-active]="anjaSelected" class="ellipse-unactive"></div>

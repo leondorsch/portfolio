@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    z-index: 2;
+    z-index: 1;
     position: relative;
     gap: 48px;
     padding: 0 100px;
+    margin-top: -480px;
 }
 
 .symbols-container {
@@ -121,6 +122,11 @@
     width: calc(50% - 380px);
 }
 
+.line-ger{
+    width: calc(50% - 680px);
+}
+
+
 .skill-info-container {
     display: flex;
     flex-direction: column;
@@ -181,9 +187,6 @@
 
 @media ( max-width:1260px){
 
-    .skills-container{
-        padding-top: 240px;
-    }
     .skills-head{
         >h4{
             background-color: unset;
@@ -191,6 +194,7 @@
     }
     .skills-main {
         flex-direction: column-reverse;
+        margin-top: 120px;
     }
 
     .skills-line{
@@ -233,9 +237,6 @@
 }
 
 @media (max-width: 480px){
-    .skills-container{
-        padding-top: 440px;
-    }
     .skills-head{
         >h4{
             background-color: unset;

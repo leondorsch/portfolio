@@ -29,8 +29,8 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    this.wasSent = true;
     if (ngForm.submitted && ngForm.form.valid) {
+      this.wasSent = true;
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {

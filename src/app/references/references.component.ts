@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from "aos";
 
 @Component({
   selector: 'app-references',
@@ -16,6 +17,10 @@ export class ReferencesComponent {
   dennisSelected:boolean = false;
   danielSelected:boolean = false;
   back: any;
+
+  ngOnInit(){
+    AOS.init();
+  }
 
   nextReference() {
     if(this.anjaSelected){

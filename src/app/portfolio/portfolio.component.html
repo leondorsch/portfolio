@@ -1,4 +1,4 @@
-<div class="portfolio-main">
+<div  class="portfolio-main">
     <img class="blue-shadow" src="assets/img/Blue shadow 1.png" alt="">
     <div style="display: flex; align-items: center;">
         <div class="portfolio-line"></div>
@@ -69,26 +69,6 @@
                 </div>
             </div>
             <img [class.zoom-img]="showPokedex" class="project-img" src="assets/img/Pokedex.png" alt="">
-            <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
-        </div>
-        <div (mouseover)="showDaBubble = true" (mouseleave)="showDaBubble = false" class="project">
-            <div *ngIf="showDaBubble" class="overlay-container">
-                <div class="button-container">
-                    <!-- <a target="_blank" class="github-btn" href="">
-                        <button disabled>Github</button>
-                    </a>
-                    <a class="live-btn" href="">
-                        <button disabled>Live test</button>
-                    </a> -->
-                </div>
-                <div class="text-container-dabubble">
-                    <span style="padding-top: 32px;">Coming soon..</span>
-                    <span>DABubble</span>
-                    <span>{{ 'portfolioDaBubble' | translate }}</span>
-                    <span>Angular | TypeScript | Firebase</span>
-                </div>
-            </div>
-            <img [class.zoom-img]="showDaBubble" class="project-img" src="assets/img/Dabubble.png" alt="">
             <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
         </div>
         <img class="green-shadow" src="assets/img/Green shadow.png" alt="">

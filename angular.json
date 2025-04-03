@@ -32,7 +32,8 @@
               
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           },
@@ -47,7 +48,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "5kb"
                 }
               ],
               "outputHashing": "all"
