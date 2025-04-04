@@ -221,8 +221,8 @@
         align-items: center;
     }
 
-    .portfolio-line {
-        min-width: 32%;
+    .portfolio-line{
+        width: calc(50% - 220px);
     }
 
     .portfolio-head {
@@ -256,6 +256,10 @@
 }
 
 @media(max-width: 480px){
+
+    .portfolio-line{
+        min-width: 20%;
+    }
     .portfolio-head-text{
         >h5{
             font-size: 45px;

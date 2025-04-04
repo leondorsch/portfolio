@@ -103,7 +103,7 @@
 .socials-line {
     position: absolute;
     width: calc(50% - 640px);
-    min-width: 68px;
+    min-width: 10%;
     left: 0;
     height: 0;
     border: 2px solid rgba(112, 230, 28, 1);
@@ -303,5 +303,9 @@
 
     .socials {
         margin-right: unset;
+    }
+
+    .socials-line {
+        min-width: 22%;
     }
 }

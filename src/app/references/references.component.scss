@@ -126,6 +126,7 @@
 .author-wrapper {
     display: flex;
     align-items: center;
+    z-index: 3;
 }
 
 @keyframes text-blend-in {

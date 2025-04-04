@@ -9,7 +9,6 @@ h6 {
     text-align: center;
     font-size: 90px;
     padding-bottom: 48px;
-    background-color: #141D2F;
     display: flex;
     z-index: 3;
 }
@@ -35,7 +34,6 @@ h6 {
 .contactQuestion {
     font-weight: 700;
     font-size: 32px;
-    background-color: #141D2F;
 }
 
 .contact-form {
@@ -151,11 +149,12 @@ input[type=checkbox]:checked+label {
 }
 
 .contact-line {
+    min-width: 20%;
     height: 0;
     border: 2px solid #70E61C;
     position: absolute;
     right: 0;
-    width: calc(50% - 106px);
+    width: calc(50% - 200px);
     flex: 1;
     margin-bottom: 36px;
     border-top-left-radius: 50px;
@@ -325,6 +324,14 @@ input[type=checkbox]:checked+label {
 }
 
 @media(max-width: 1260px){
+
+    .question-line{
+        width: calc(50% - 300px);
+    }
+
+    .contact-line{
+        width: calc(50% - 120px);
+    }
     .contact-main{
         padding: 160px 25px 0px 25px;
     }
@@ -338,11 +345,6 @@ input[type=checkbox]:checked+label {
     .message-alert-img{
         bottom: 368px;
     }
-
-    .question-line{
-        min-width: 24%;
-    }
-
     .contact-wrapper {
         flex-direction: column;
         align-items: center;
@@ -420,5 +422,9 @@ input[type=checkbox]:checked+label {
             top: 6400px;
             width: 238px;
         }
+    }
+
+    .question-line{
+        min-width: 4%;
     }
 }

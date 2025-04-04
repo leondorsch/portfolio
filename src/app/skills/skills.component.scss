@@ -67,7 +67,7 @@
 }
 
 .skills-container {
-    padding-top: 180px;
+    padding-top: 260px;
     max-width: 471px;
     height: 492px;
     display: flex;
@@ -197,10 +197,6 @@
         margin-top: 120px;
     }
 
-    .skills-line{
-        min-width: 48%;
-    }
-
     .skill-info-container{
         display: none;
     }
@@ -234,21 +230,21 @@
         display: flex;
         justify-content: center;
     }
+
+    .skills-line{
+        width: calc(50% - 16px);
+    }
 }
 
 @media (max-width: 480px){
     .skills-head{
         >h4{
-            background-color: unset;
+            background-color: #141D2F;
             font-size: 45px;
         }
     }
     .skills-main{
         padding: 0 25px;
-    }
-
-    .skills-line{
-        min-width: 48%;
     }
 
     .skill-info-container{
@@ -283,5 +279,9 @@
     .learning-container{
         display: flex;
         justify-content: center;
+    }
+
+    .skills-line{
+        min-width: 58%;
     }
 }
