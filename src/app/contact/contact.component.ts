@@ -1,13 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, NgModule } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
+import AOS from "aos";
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  constructor() {
+    AOS.init();
+  }
   isChecked = false;
   wasSent = false;
   http = inject(HttpClient);
@@ -42,6 +45,6 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } 
+    }
   }
 }

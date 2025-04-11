@@ -232,7 +232,15 @@
     }
 
     .skills-line{
-        width: calc(50% - 16px);
+        width: calc(50% - 320px);
+    }
+}
+
+@media (max-width:680px){
+    .skills-head{
+        >h4{
+            font-size: 72px;
+        }
     }
 }
 

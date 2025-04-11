@@ -21,7 +21,7 @@
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
 
                 <label for="name"></label>
-                <input [class.green-border]="name.valid && name.touched"
+                <input data-aos="zoom-in" [class.green-border]="name.valid && name.touched"
                     [class.red-border]="!name.valid && name.touched" #name="ngModel" [(ngModel)]="contactData.name"
                     class="name-input" id="name" name="name" type="text"
                     placeholder="{{ 'placeholderName' | translate }}" required>
@@ -31,7 +31,7 @@
                 <img *ngIf="name.valid && name.touched" class="name-fine-img" src="assets/img/input-fine.png" alt="">
 
                 <label for="email"></label>
-                <input [class.green-border]="email.valid && email.touched"
+                <input data-aos="zoom-in" [class.green-border]="email.valid && email.touched"
                     [class.red-border]="!email.valid && email.touched" #email="ngModel" [(ngModel)]="contactData.email"
                     class="email-input" id="email" name="email" type="email"
                     placeholder="{{ 'placeholderEmail' | translate }}" required
@@ -43,7 +43,7 @@
                 <img *ngIf="email.valid && email.touched" class="email-fine-img" src="assets/img/input-fine.png" alt="">
 
                 <label for="message"></label>
-                <textarea [class.green-border]="message.valid && message.touched"
+                <textarea data-aos="zoom-in" [class.green-border]="message.valid && message.touched"
                     [class.red-border]="!message.valid && message.touched" #message="ngModel"
                     [(ngModel)]="contactData.message" class="message-input" name="message" id="message"
                     placeholder="{{ 'placeholderMessage' | translate }}" required></textarea>

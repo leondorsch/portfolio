@@ -13,8 +13,8 @@
         <span>{{ 'portfolioInfo' | translate }}</span>
     </div>
 
-    <div  class="project-container">
-        <div (mouseover)="showPolloLoco = true" (mouseleave)="showPolloLoco = false" class="project">
+    <div   class="project-container">
+        <div data-aos="zoom-in" (mouseover)="showPolloLoco = true" (mouseleave)="showPolloLoco = false" class="project">
             <div *ngIf="showPolloLoco" class="overlay-container">
                 <div class="button-container">
                     <a target="_blank" class="github-btn" href="https://github.com/leondorsch/El-Pollo-Loco">
@@ -33,7 +33,7 @@
             <img [class.zoom-img]="showPolloLoco" class="project-img" src="assets/img/Pollo loco.png" alt="">
             <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
         </div>
-        <div (mouseover)="showJoin = true" (mouseleave)="showJoin = false" class="project">
+        <div data-aos="zoom-in" (mouseover)="showJoin = true" (mouseleave)="showJoin = false" class="project">
             <div *ngIf="showJoin" class="overlay-container">
                 <div class="button-container">
                     <a target="_blank" class="github-btn" href="https://github.com/leondorsch/Join">
@@ -52,7 +52,7 @@
             <img [class.zoom-img]="showJoin" class="project-img" src="assets/img/Join.png" alt="">
             <img class="project-shadow" src="assets/img/project-shadow.png" alt="">
         </div>
-        <div (mouseover)="showPokedex = true" (mouseleave)="showPokedex = false" class="project">
+        <div data-aos="zoom-in" (mouseover)="showPokedex = true" (mouseleave)="showPokedex = false" class="project">
             <div *ngIf="showPokedex" class="overlay-container">
                 <div class="button-container">
                     <a target="_blank" class="github-btn" href="https://github.com/leondorsch/PokeAPI">
