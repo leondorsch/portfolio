@@ -110,6 +110,7 @@
         line-height: 120%;
         display: flex;
         z-index: 3;
+        background-color: #141D2F;
     }
 }
 
@@ -189,7 +190,7 @@
 
     .skills-head{
         >h4{
-            background-color: unset;
+            background-color: #141D2F;
         }
     }
     .skills-main {
@@ -232,7 +233,7 @@
     }
 
     .skills-line{
-        width: calc(50% - 320px);
+        width: calc(50% - 20px);
     }
 }
 

@@ -39,6 +39,7 @@
     height: 0;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    min-width: 80px;
 }
 
 .project-container {
@@ -94,7 +95,7 @@
     width: 589px;
     position: absolute;
     right: 0;
-    top: 2378px;
+    top: 2800px;
     display: flex;
     z-index: 0;
 }
@@ -217,6 +218,10 @@
 }
 
 @media (max-width:1260px){
+
+    .blue-shadow {
+        top: 3200px;
+    }
     .portfolio-main{
         align-items: center;
     }

@@ -171,7 +171,8 @@ input[type=checkbox]:checked+label {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     display: flex;
-    z-index: -1
+    z-index: -1;
+    min-width: 80px;
 }
 
 .form-section-wrapper {
@@ -327,6 +328,7 @@ input[type=checkbox]:checked+label {
 
     .question-line{
         width: calc(50% - 300px);
+        min-width: 0px;
     }
 
     .contact-line{
