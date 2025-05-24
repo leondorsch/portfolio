@@ -2,8 +2,7 @@
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    z-index: 2;
-    position: relative;
+    justify-content: space-around;
 }
 
 .about-me-headline {
@@ -15,12 +14,11 @@
 .about-me-container {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
     gap: 35px;
     width: 471px !important;
     height: 133px;
     position: relative;
-    z-index: 1;
+    z-index: 4;
 }
 
 .about-me-info-container {
@@ -47,39 +45,24 @@
     }
 }
 
-.personal-img-container {
-    background-image: url('/assets/img/purple-shadow-about-me.png'), url('/assets/img/green-shadow-about-me.png');
-    background-position: 10% 120%, 100% 90%;
-    background-size: 62% 82%, 60% 80%;
-    background-repeat: no-repeat, no-repeat;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: -2;
-}
-
 .profile-img {
     width: 100%;
     max-width: 620px;
     max-height: 647px;
     display: flex;
-    margin-top: 100px;
     margin-bottom: 48px;
-    position: relative;
-    z-index: -3;
 }
 
 .curved-section-container {
-    position: relative;
     display: flex;
-    z-index: 0;
     height: 878.5px;
     width: 100%;
     background-image: url('/assets/img/28. Hero Background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: -320px;
+    margin-top: -336px;
+    position: relative;
+    z-index: -1;
 }
 
 .about-me-letsconnect {
@@ -90,6 +73,13 @@
     display: flex;
     gap: 16px;
     flex-direction: column;
+}
+
+.profile-img-container {
+    position: relative;
+    display: flex;
+    z-index: -2;
+    justify-content: end;
 }
 
 @media(max-width: 1260px) {
