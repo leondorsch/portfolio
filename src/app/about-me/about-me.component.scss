@@ -3,6 +3,10 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    background-image: url('/assets/img/purple-shadow-about-me.png'), url('/assets/img/green-shadow-about-me.png');
+    background-position: 75%, right;
+    background-size: 480px;
+    background-repeat: no-repeat;
 }
 
 .about-me-headline {
@@ -59,7 +63,7 @@
     background-image: url('/assets/img/28. Hero Background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: -220px;
+    margin-top: -272px;
     position: relative;
     z-index: 0;
 }
@@ -75,6 +79,7 @@
 }
 
 .profile-img-container {
+
     position: relative;
     display: flex;
     z-index: -2;
@@ -90,6 +95,8 @@
     .about-me-main {
         flex-direction: column-reverse;
         align-items: center;
+        background-position: 24%, 75%;
+        background-size: 480px;
     }
 
     .curved-section-container {
@@ -124,5 +131,11 @@
     .about-me-headline {
         font-size: 45px;
         padding-top: 24px;
+    }
+    .about-me-main {
+        flex-direction: column-reverse;
+        align-items: center;
+        background-position: 24%, 75%;
+        background-size: 340px, 340px;
     }
 }
