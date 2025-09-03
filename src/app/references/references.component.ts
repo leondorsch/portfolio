@@ -7,15 +7,15 @@ import AOS from "aos";
   styleUrls: ['./references.component.scss']
 })
 export class ReferencesComponent {
-  pictureAnja: string = "assets/img/anja-img.jpeg"
-  pictureDennis: string = "assets/img/dennis-img.png"
-  pictureDaniel: string = "assets/img/daniel-img.jpeg"
+  pictureAnja: string = "assets/img/anja-img.webp"
+  pictureDennis: string = "assets/img/dennis-img.webp"
+  pictureDaniel: string = "assets/img/daniel-img.webp"
   nameAnja: string = "A.Gollner"
   nameDennis: string = "D.Jakobi"
   nameDaniel: string = "D.Löffler"
-  anjaSelected:boolean = true;
+  anjaSelected:boolean = false;
   dennisSelected:boolean = false;
-  danielSelected:boolean = false;
+  danielSelected:boolean = true;
   back: any;
 
   ngOnInit(){
@@ -25,26 +25,26 @@ export class ReferencesComponent {
   nextReference() {
     if(this.anjaSelected){
       this.anjaSelected = false;
-      this.dennisSelected = true;
+      this.danielSelected = true;
     } else if(this.dennisSelected){
       this.dennisSelected = false;
-      this.danielSelected = true;
+      this.anjaSelected = true;
     } else if(this.danielSelected){
       this.danielSelected = false;
-      this.anjaSelected = true;
+      this.dennisSelected = true;
     }
   }
 
   previousReference(){
     if(this.danielSelected){
       this.danielSelected = false;
-      this.dennisSelected = true;
+      this.anjaSelected = true;
     } else if(this.dennisSelected){
       this.dennisSelected = false;
-      this.anjaSelected = true;
+      this.danielSelected = true;
     } else if(this.anjaSelected){
       this.anjaSelected = false;
-      this.danielSelected = true;
+      this.dennisSelected = true;
     }
   }
 }

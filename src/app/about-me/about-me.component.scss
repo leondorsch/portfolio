@@ -79,11 +79,12 @@
 }
 
 .profile-img-container {
-
     position: relative;
     display: flex;
     z-index: -2;
     justify-content: end;
+    padding: 0 8px;
+    padding-bottom: 24px;
 }
 
 @media(max-width: 1260px) {

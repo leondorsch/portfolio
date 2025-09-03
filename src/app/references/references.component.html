@@ -7,16 +7,18 @@
             <span class="text-blend-in" *ngIf="danielSelected"> {{ 'referenceDaniel' | translate }}</span>
             <div class="reference-author-container">
                 <div class="reference-line"></div>
-                <span class="text-blend-in" *ngIf="anjaSelected">{{nameAnja}} - {{ 'engineer' | translate }}</span>
-                <span class="text-blend-in" *ngIf="dennisSelected">{{nameDennis}} - {{ 'teamPartner' | translate }}</span>
                 <span class="text-blend-in" *ngIf="danielSelected">{{nameDaniel}} - {{ 'teamPartner' | translate }}</span>
+                <span class="text-blend-in" *ngIf="dennisSelected">{{nameDennis}} - {{ 'teamPartner' | translate }}</span>
+                <span class="text-blend-in" *ngIf="anjaSelected">{{nameAnja}} - {{ 'engineer' | translate }}</span>
+                
+                
             </div>
         </div>
         <div class="author-wrapper">
             <div class="author-img-container">
-                <img class="text-blend-in" *ngIf="anjaSelected" [src]="pictureAnja" alt="">
-                <img class="text-blend-in" *ngIf="dennisSelected" [src]="pictureDennis" alt="">
                 <img class="text-blend-in" *ngIf="danielSelected" [src]="pictureDaniel" alt="">
+                <img class="text-blend-in" *ngIf="dennisSelected" [src]="pictureDennis" alt="">
+                <img class="text-blend-in" *ngIf="anjaSelected" [src]="pictureAnja" alt="">
             </div>
             <div class="author-line"></div>
         </div>
@@ -24,9 +26,11 @@
     <div  class="forward-and-back-container">
         <img (click)="previousReference()" src="assets/img/arrow_back.png" alt="">
         <div class="ellipse-wrapper">
-            <div [class.ellipse-active]="anjaSelected" class="ellipse-unactive"></div>
-            <div [class.ellipse-active]="dennisSelected" class="ellipse-unactive"></div>
             <div [class.ellipse-active]="danielSelected" class="ellipse-unactive"></div>
+            <div [class.ellipse-active]="dennisSelected" class="ellipse-unactive"></div>
+            <div [class.ellipse-active]="anjaSelected" class="ellipse-unactive"></div>
+            
+            
         </div>
 
         <img (click)="nextReference()" src="assets/img/arrow_forward.png" alt="">
