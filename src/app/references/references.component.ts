@@ -13,9 +13,9 @@ export class ReferencesComponent {
   nameAnja: string = "A.Gollner"
   nameDennis: string = "D.Jakobi"
   nameDaniel: string = "D.Löffler"
-  anjaSelected:boolean = false;
+  anjaSelected:boolean = true;
   dennisSelected:boolean = false;
-  danielSelected:boolean = true;
+  danielSelected:boolean = false;
   back: any;
 
   ngOnInit(){
@@ -25,26 +25,26 @@ export class ReferencesComponent {
   nextReference() {
     if(this.anjaSelected){
       this.anjaSelected = false;
-      this.danielSelected = true;
+      this.dennisSelected = true;
     } else if(this.dennisSelected){
       this.dennisSelected = false;
-      this.anjaSelected = true;
+      this.danielSelected = true;
     } else if(this.danielSelected){
       this.danielSelected = false;
-      this.dennisSelected = true;
+      this.anjaSelected = true;
     }
   }
 
   previousReference(){
     if(this.danielSelected){
       this.danielSelected = false;
-      this.anjaSelected = true;
+      this.dennisSelected = true;
     } else if(this.dennisSelected){
       this.dennisSelected = false;
-      this.danielSelected = true;
+      this.anjaSelected = true;
     } else if(this.anjaSelected){
       this.anjaSelected = false;
-      this.dennisSelected = true;
+      this.danielSelected = true;
     }
   }
 }
